@@ -1,4 +1,3 @@
-
 module.exports = {
     presets: [
       ['@babel/preset-env',
@@ -8,13 +7,5 @@ module.exports = {
           },
         },
       ],
-    ],
-    plugins: [
-      [
-        '@babel/plugin-proposal-pipeline-operator',
-        {
-          proposal: 'minimal',
-        },
-      ],
-    ],
+    ]
   };
