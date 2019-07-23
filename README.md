@@ -62,3 +62,28 @@ Game prints you a random expression. Answer the expression's result
 > Correct!
 >
 > Congratulations, Ilya!
+
+- ### Greatest common divisor
+#### Usage:
+`brain_gcd`
+#### Rules:
+Game prints you 2 random numbers. Find the greatest common divisor of given numbers.
+#### Example:
+> Welcome to the Brain Games!
+> Find the greatest common divisor of given numbers.
+> May I have your name? Ilya
+> Hello, Ilya!
+>
+> Question: 48 384
+> Your answer: 48
+> Correct!
+>
+> Question: 83 67
+> Your answer: 1
+> Correct!
+>
+> Question: 35 50
+> Your answer: 5
+> Correct!
+>
+> Congratulations, Ilya!
