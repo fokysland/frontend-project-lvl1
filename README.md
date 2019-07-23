@@ -128,7 +128,7 @@ Game prints you a number. Answer "yes" if the number is prime. Otherwise answer 
 > Your answer: no  
 > Correct!  
 >
-> Question: 73 
+> Question: 73  
 > Your answer: no  
 > Correct!  
 >
