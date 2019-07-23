@@ -19,23 +19,23 @@ Output:
 Game prints you a random number. Answer `yes`  if the number is even otherwise answer `no`.
 #### Example:
 > Welcome to the Brain Games!
->Answer "yes"  if number even otherwise answer "no".
->May I have your name? Ilya
->Hello, Ilya!
+> Answer "yes"  if number even otherwise answer "no".
+> May I have your name? Ilya
+> Hello, Ilya!
 >
 > Question: 16
->Your answer: yes
->Correct!
+> Your answer: yes
+> Correct!
 >
->Question: 64
->Your answer: yes
->Correct!
+> Question: 64
+> Your answer: yes
+> Correct!
 >
->Question: 41
->Your answer: no
->Correct!
+> Question: 41
+> Your answer: no
+> Correct!
 >
->Congratulations, Ilya!
+> Congratulations, Ilya!
 
 - ### Calculator
 #### Usage:
@@ -44,21 +44,21 @@ Game prints you a random number. Answer `yes`  if the number is even otherwise a
 Game prints you a random expression. Answer the expression's result
 #### Example:
 
->Welcome to the Brain Games!
->What is the result of the expression?
->May I have your name? Ilya
->Hello, Ilya!
+> Welcome to the Brain Games!
+> What is the result of the expression?
+> May I have your name? Ilya
+> Hello, Ilya!
 >
->Question: 67 + 84?
->Your answer: 151
->Correct!
+> Question: 67 + 84?
+> Your answer: 151
+> Correct!
 >
->Question: 20 * 81?
->Your answer: 1620
->Correct!
+> Question: 20 * 81?
+> Your answer: 1620
+> Correct!
 >
->Question: 43 - 8?
->Your answer: 35
->Correct!
+> Question: 43 - 8?
+> Your answer: 35
+> Correct!
 >
->Congratulations, Ilya!
+> Congratulations, Ilya!
