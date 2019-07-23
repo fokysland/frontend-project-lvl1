@@ -112,3 +112,28 @@ Game prints you an arithmetical progression without one number. Find the missing
 > Correct!
 >
 > Congratulations, Ilya!
+
+- ### Is prime?
+#### Usage:
+`brain_prime`
+#### Rules:
+Game prints you a number. Answer "yes" if the number is prime. Otherwise answer "no".
+#### Example:
+> Welcome to the Brain Games!
+> Answer "yes" if given number is prime. Otherwise answer "no".
+> May I have your name? Ilya
+> Hello, Ilya!
+>
+> Question: 45
+> Your answer: no
+> Correct!
+>
+> Question: 73
+> Your answer: no
+> Correct!
+>
+> Question: 31
+> Your answer: no
+> Correct!
+>
+> Congratulations, Ilya!
