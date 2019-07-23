@@ -129,11 +129,11 @@ Game prints you a number. Answer "yes" if the number is prime. Otherwise answer 
 > Correct!  
 >
 > Question: 73  
-> Your answer: no  
+> Your answer: yes  
 > Correct!  
 >
 > Question: 31  
-> Your answer: no  
+> Your answer: yes  
 > Correct!  
 >
 > Congratulations, Ilya!  
