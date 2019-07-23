@@ -1,7 +1,7 @@
 {
   "name": "brain_games_fokysland",
   "version": "1.0.0",
-  "description": "my first project",
+  "description": "simple game",
   "main": "index.js",
   "bin": {
     "brain_games": "./dist/bin/brain-games.js",

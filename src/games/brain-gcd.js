@@ -1,28 +1,30 @@
 import game from './game';
 
 const findGcd = (num1, num2) => {
-  let a = num1;
-  let b = num2;
-  while (a !== b) {
-    if (a > b) {
-      a -= b;
+  let firstNum = num1;
+  let secondNum = num2;
+  while (firstNum !== secondNum) {
+    if (firstNum > secondNum) {
+      firstNum -= secondNum;
     } else {
-      b -= a;
+      secondNum -= firstNum;
     }
   }
 
-  return a;
+  return firstNum;
 };
 
 const generateProportionalNumbers = () => {
+  const maxFactor = 10;
   const firstNum = game.getRandom();
-  const factor = Math.round(Math.random() * 10);
-  return { a: firstNum, b: firstNum * factor };
+  const factor = Math.round(Math.random() * maxFactor);
+  const secondNum = firstNum * factor;
+  return { firstNum, secondNum };
 };
 
 const generateRandomNumbers = () => ({
-  a: game.getRandom(),
-  b: game.getRandom(),
+  firstNum: game.getRandom(),
+  secondNum: game.getRandom(),
 });
 
 export default () => {
@@ -30,12 +32,14 @@ export default () => {
   const { state, name } = game.beforeStart(message);
 
   const callback = () => {
-    const { a, b } = Math.random() < 0.5 ? generateProportionalNumbers() : generateRandomNumbers();
-    let correctAnswer = findGcd(a, b);
+    const { firstNum, secondNum } = Math.random() < 0.5
+      ? generateProportionalNumbers()
+      : generateRandomNumbers(); // to encrease propotional numbers chance
+    let correctAnswer = findGcd(firstNum, secondNum);
     correctAnswer = String(correctAnswer);
     return {
       correctAnswer,
-      question: `${a} ${b}`,
+      question: `${firstNum} ${secondNum}`,
     };
   };
 
