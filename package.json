@@ -4,7 +4,8 @@
   "description": "my first project",
   "main": "index.js",
   "bin": {
-    "brain_games": "./dist/bin/brain-games.js"
+    "brain_games": "./dist/bin/brain-games.js",
+    "brain_even": "./dist/bin/brain-even.js"
   },
   "files": [
     "dist"
@@ -21,10 +22,10 @@
   "author": "fokysland",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
-    "@babel/node": "^7.5.0",
-    "@babel/preset-env": "^7.5.4",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "babel-eslint": "^10.0.2",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^13.2.0",
