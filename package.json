@@ -5,7 +5,8 @@
   "main": "index.js",
   "bin": {
     "brain_games": "./dist/bin/brain-games.js",
-    "brain_even": "./dist/bin/brain-even.js"
+    "brain_even": "./dist/bin/brain-even.js",
+    "brain_calc": "./dist/bin/brain-calculator.js"
   },
   "files": [
     "dist"
