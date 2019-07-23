@@ -1,3 +1,9 @@
+---
+
 language: node_js
-before_install:
-  make lint
+node_js:
+  - node
+
+script:
+  - make lint
+  - make test
