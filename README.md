@@ -137,3 +137,19 @@ Game prints you a number. Answer "yes" if the number is prime. Otherwise answer 
 > Correct!  
 >
 > Congratulations, Ilya!  
+
+## Failure
+If your answer'll be wrong, the game will print: 
+
+> Welcome to the Brain Games!  
+> Answer "yes" if given number is prime. Otherwise answer "no".  
+> May I have your name? Ilya  
+> Hello, Ilya!  
+>
+> Question: 36  
+> Your answer: yes  
+>
+> yes is wrong answer ;( Correct answer was no.  
+> Let's try again, Ilya!
+
+*If you want to continue playing, just rewrite game's you'd like to play command*
