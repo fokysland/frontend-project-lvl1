@@ -87,3 +87,28 @@ Game prints you 2 random numbers. Find the greatest common divisor of given numb
 > Correct!
 >
 > Congratulations, Ilya!
+
+- ### Progression
+#### Usage:
+`brain_prog`
+#### Rules:
+Game prints you an arithmetical progression without one number. Find the missing number.
+#### Example:
+> Welcome to the Brain Games!
+> What number is missing in the progression?
+> May I have your name? Ilya
+> Hello, Ilya!
+>
+> Question: 98 100 102 104 106 108 110 112 114 ..
+> Your answer: 116
+> Correct!
+>
+> Question: 80 82 .. 86 88 90 92 94 96 98
+> Your answer: 84
+> Correct!
+>
+> Question: 9 12 15 18 21 24 .. 30 33 36
+> Your answer: 27
+> Correct!
+>
+> Congratulations, Ilya!
