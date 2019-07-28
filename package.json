@@ -2,14 +2,13 @@
   "name": "brain_games_fokysland",
   "version": "1.0.0",
   "description": "simple game",
-  "main": "index.js",
   "bin": {
-    "brain_games": "./dist/bin/brain-games.js",
-    "brain_even": "./dist/bin/brain-even.js",
-    "brain_calc": "./dist/bin/brain-calculator.js",
-    "brain_gcd": "./dist/bin/brain-gcd.js",
-    "brain_prog": "./dist/bin/brain-progression.js",
-    "brain_prime": "./dist/bin/brain-prime.js"
+    "brain_games": "./dist/bin/games.js",
+    "brain_even": "./dist/bin/even.js",
+    "brain_calc": "./dist/bin/calculator.js",
+    "brain_gcd": "./dist/bin/gcd.js",
+    "brain_prog": "./dist/bin/progression.js",
+    "brain_prime": "./dist/bin/prime.js"
   },
   "files": [
     "dist"
@@ -37,6 +36,6 @@
     "eslint-plugin-import": "^2.18.2"
   },
   "dependencies": {
-    "readline-sync": "^1.4.9"
+    "readline-sync": "^1.4.10"
   }
 }
