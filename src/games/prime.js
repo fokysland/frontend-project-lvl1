@@ -10,18 +10,17 @@ const isPrime = (num) => {
   return true;
 };
 
+const getQuestionAndAnswer = () => {
+  const number = getRandom();
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+
+  return {
+    correctAnswer,
+    question: `${number}`,
+  };
+};
+
 export default () => {
   const message = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-  const callback = () => {
-    const number = getRandom();
-    const correctAnswer = isPrime(number) ? 'yes' : 'no';
-
-    return {
-      correctAnswer,
-      question: `${number}`,
-    };
-  };
-
-  engine.start(message, callback);
+  engine.start(message, getQuestionAndAnswer);
 };

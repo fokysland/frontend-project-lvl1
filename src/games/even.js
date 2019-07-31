@@ -1,19 +1,18 @@
 import engine from '../engine';
+import getRandom from '../randomizer';
 
-const getRandom = () => Math.round(Math.random() * 100);
+const isEven = number => Boolean(number % 2);
+const getQuestionAndAnswer = () => {
+  const question = getRandom();
+  const correctAnswer = isEven(question) ? 'no' : 'yes';
+
+  return {
+    correctAnswer,
+    question: `${question}`,
+  };
+};
 
 export default () => {
   const message = 'Answer "yes" if number even otherwise answer "no".';
-
-  const callback = () => {
-    const number = getRandom();
-    const correctAnswer = number % 2 ? 'no' : 'yes';
-
-    return {
-      correctAnswer,
-      question: `${number}`,
-    };
-  };
-
-  engine.start(message, callback);
+  engine.start(message, getQuestionAndAnswer);
 };
