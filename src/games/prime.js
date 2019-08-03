@@ -1,5 +1,6 @@
 import engine from '../engine';
 
+const message = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const getRandom = () => Math.round(Math.random() * 100);
 
 const isPrime = (num) => {
@@ -20,7 +21,4 @@ const getQuestionAndAnswer = () => {
   };
 };
 
-export default () => {
-  const message = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  engine.start(message, getQuestionAndAnswer);
-};
+export default () => engine.start(message, getQuestionAndAnswer);

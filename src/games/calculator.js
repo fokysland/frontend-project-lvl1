@@ -1,8 +1,8 @@
 import engine from '../engine';
 import getRandom from '../randomizer';
 
+const message = 'What is the result of the expression?';
 const getRandomOperation = operations => operations[getRandom(operations.length - 1)];
-
 const operations = ['+', '-', '*'];
 const getQuestionAndAnswer = () => {
   const operator = getRandomOperation(operations);
@@ -30,7 +30,5 @@ const getQuestionAndAnswer = () => {
   };
 };
 
-export default () => {
-  const message = 'What is the result of the expression?';
-  engine.start(message, getQuestionAndAnswer);
-};
+export default () => engine.start(message, getQuestionAndAnswer);
+

@@ -1,6 +1,7 @@
 import engine from '../engine';
 import getRandom from '../randomizer';
 
+const message = 'Find the greatest common divisor of given numbers.';
 const findGcd = (num1, num2) => {
   let a = num1;
   let b = num2;
@@ -21,7 +22,7 @@ const generateRandomNumbers = () => ({
 });
 
 const getQuestionAndAnswer = () => {
-  const { a, b } = generateRandomNumbers(); // to encrease propotional numbers chance
+  const { a, b } = generateRandomNumbers();
   let correctAnswer = findGcd(a, b);
   correctAnswer = String(correctAnswer);
   return {
@@ -30,7 +31,4 @@ const getQuestionAndAnswer = () => {
   };
 };
 
-export default () => {
-  const message = 'Find the greatest common divisor of given numbers.';
-  engine.start(message, getQuestionAndAnswer);
-};
+export default () => engine.start(message, getQuestionAndAnswer);
