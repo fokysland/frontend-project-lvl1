@@ -31,4 +31,3 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => engine.start(message, getQuestionAndAnswer);
-
