@@ -16,19 +16,14 @@ const findGcd = (num1, num2) => {
   return a;
 };
 
-const generateRandomNumbers = () => ({
-  a: getRandom(),
-  b: getRandom(),
-});
-
 const getQuestionAndAnswer = () => {
-  const { a, b } = generateRandomNumbers();
-  let correctAnswer = findGcd(a, b);
-  correctAnswer = String(correctAnswer);
+  const a = getRandom();
+  const b = getRandom();
+  const correctAnswer = findGcd(a, b);
   return {
-    correctAnswer,
+    correctAnswer: String(correctAnswer),
     question: `${a} ${b}`,
   };
 };
 
-export default () => engine.start(message, getQuestionAndAnswer);
+export default () => engine(message, getQuestionAndAnswer);

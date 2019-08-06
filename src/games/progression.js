@@ -5,20 +5,19 @@ const message = 'What number is missing in the progression?';
 const progressionLength = 10;
 const getQuestionAndAnswer = () => {
   const start = getRandom();
-  const step = getRandom(progressionLength);
-  const hiddenElementId = getRandom(progressionLength);
+  const step = getRandom(progressionLength - 1);
+  const hiddenElementId = getRandom(progressionLength - 1);
   const progression = [];
   for (let i = start; i <= (progressionLength - 1) * step + start; i += step) {
     progression.push(i);
   }
-  let correctAnswer = progression[hiddenElementId];
+  const correctAnswer = progression[hiddenElementId];
   progression[hiddenElementId] = '..';
   const question = progression.join(' ');
-  correctAnswer = String(correctAnswer);
   return {
-    correctAnswer,
+    correctAnswer: String(correctAnswer),
     question,
   };
 };
 
-export default () => engine.start(message, getQuestionAndAnswer);
+export default () => engine(message, getQuestionAndAnswer);

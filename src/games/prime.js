@@ -21,4 +21,4 @@ const getQuestionAndAnswer = () => {
   };
 };
 
-export default () => engine.start(message, getQuestionAndAnswer);
+export default () => engine(message, getQuestionAndAnswer);

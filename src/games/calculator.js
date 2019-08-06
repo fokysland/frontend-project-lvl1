@@ -2,10 +2,9 @@ import engine from '../engine';
 import getRandom from '../randomizer';
 
 const message = 'What is the result of the expression?';
-const getRandomOperation = operations => operations[getRandom(operations.length - 1)];
 const operations = ['+', '-', '*'];
 const getQuestionAndAnswer = () => {
-  const operator = getRandomOperation(operations);
+  const operator = operations[getRandom(operations.length - 1)];
   const firstNumber = getRandom();
   const secondNumber = getRandom();
   let correctAnswer;
@@ -22,12 +21,10 @@ const getQuestionAndAnswer = () => {
     default:
       throw new Error(`Unkown operation: ${operator}`);
   }
-
-  correctAnswer = String(correctAnswer);
   return {
-    correctAnswer,
+    correctAnswer: String(correctAnswer),
     question: `${firstNumber} ${operator} ${secondNumber}?`,
   };
 };
 
-export default () => engine.start(message, getQuestionAndAnswer);
+export default () => engine(message, getQuestionAndAnswer);
