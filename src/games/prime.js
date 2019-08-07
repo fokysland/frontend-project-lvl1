@@ -1,7 +1,8 @@
 import engine from '../engine';
+import getRandom from '../randomizer';
 
 const message = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const getRandom = () => Math.round(Math.random() * 100);
+
 
 const isPrime = (num) => {
   if (num < 2) return false;
@@ -12,7 +13,7 @@ const isPrime = (num) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const number = getRandom();
+  const number = getRandom(0, 100);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
   return {

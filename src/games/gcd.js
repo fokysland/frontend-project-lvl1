@@ -17,8 +17,8 @@ const findGcd = (num1, num2) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const a = getRandom();
-  const b = getRandom();
+  const a = getRandom(0, 100);
+  const b = getRandom(0, 100);
   const correctAnswer = findGcd(a, b);
   return {
     correctAnswer: String(correctAnswer),

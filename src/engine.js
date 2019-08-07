@@ -9,10 +9,9 @@ const engine = (message, getQuestionAndAnswer) => {
   console.log(`Hello, ${name}!`);
   console.log('\n');
   const iter = (counter) => {
-    if (counter > maxAttempt) {
-      console.log('Correct!');
-      console.log('\n');
+    if (counter === maxAttempt) {
       console.log(`Congratulations, ${name}!`);
+      return;
     }
     const { question, correctAnswer } = getQuestionAndAnswer();
     console.log(`Question: ${question}`);

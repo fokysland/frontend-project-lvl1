@@ -4,11 +4,11 @@ import getRandom from '../randomizer';
 const message = 'What number is missing in the progression?';
 const progressionLength = 10;
 const getQuestionAndAnswer = () => {
-  const start = getRandom();
-  const step = getRandom(progressionLength - 1);
-  const hiddenElementId = getRandom(progressionLength - 1);
+  const start = getRandom(-100, 100);
+  const step = getRandom(1, 10);
+  const hiddenElementId = getRandom(0, progressionLength - 1);
   const progression = [];
-  for (let i = start; i <= (progressionLength - 1) * step + start; i += step) {
+  for (let i = start; i <= Math.abs((progressionLength - 1) * step + start); i += step) {
     progression.push(i);
   }
   const correctAnswer = progression[hiddenElementId];
