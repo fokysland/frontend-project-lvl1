@@ -8,8 +8,8 @@ const getQuestionAndAnswer = () => {
   const step = getRandom(1, 10);
   const hiddenElementId = getRandom(0, progressionLength - 1);
   const progression = [];
-  for (let i = start; i <= Math.abs((progressionLength - 1) * step + start); i += step) {
-    progression.push(i);
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(i * step + start);
   }
   const correctAnswer = progression[hiddenElementId];
   progression[hiddenElementId] = '..';
