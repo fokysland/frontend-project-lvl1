@@ -17,7 +17,7 @@ const getQuestionAndAnswer = () => {
 
   return {
     correctAnswer,
-    question
+    question,
   };
 };
 
